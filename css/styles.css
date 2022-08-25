@@ -112,15 +112,15 @@ button {
 .five {
   position: absolute;
   justify-content: center;
-  width: 150px;
+  width: 125px;
   height: 60px;
-  right: 25px;
+  right: 10px;
   border-left: 1px solid #fff;
 }
 
 .front-pag {
   display: flex;
-  height: 90vh;
+  height: calc(95vh - 50px);
   justify-content: center;
   align-items: center;
 }
@@ -143,6 +143,52 @@ button {
   font-size: 32px;
   line-height: 39px;
   color: #4D5BCE;
+}
+
+.footer-pag {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid #fff;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 20px;
+  color: #607B96;
+}
+.footer-pag div {
+  display: flex;
+  align-items: center;
+}
+.footer-pag .find {
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  border-right: 1px solid #fff;
+}
+.footer-pag .find-icon {
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-right: 1px solid #fff;
+}
+.footer-pag .find-icon a {
+  color: #607B96;
+}
+.footer-pag .me-id {
+  position: absolute;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  right: 0px;
+  border-left: 1px solid #fff;
+}
+.footer-pag .me-id a {
+  color: #607B96;
+  text-decoration: none;
+}
+.footer-pag .me-id p {
+  margin-right: 5px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
