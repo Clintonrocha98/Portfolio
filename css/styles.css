@@ -186,6 +186,9 @@ button {
   color: #607B96;
   text-decoration: none;
 }
+.footer-pag .me-id a::hover {
+  transform: scale(150%);
+}
 .footer-pag .me-id p {
   margin-right: 5px;
   margin-left: 10px;
