@@ -14,9 +14,32 @@
     line-height: 76px
 
     color: #E5E9F0
-.p2
-    font-weight: 450
-    font-size: 32px
-    line-height: 39px
+.box-animation
+    display: flex
+    align-items: center
 
-    color: #4D5BCE
+    .p2,.p3
+        margin: 10px
+        font-weight: 450
+        font-size: 32px
+        line-height: 39px
+        color: #E2DCC8
+    
+    .p2
+        animation: seta 1s
+        transition-timing-function: ease-in-out
+        animation-iteration-count: infinite
+        animation-direction: alternate
+
+        
+
+@keyframes seta
+    0%
+        transform: translateX(-5px)
+    
+
+    100%
+        transform: translateX(5px)
+
+
+

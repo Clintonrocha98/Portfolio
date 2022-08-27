@@ -58,7 +58,7 @@ button {
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  background: rgb(25, 25, 25);
+  background: #0d1117;
   background: linear-gradient(11deg, rgb(25, 25, 25) 28%, rgb(7, 11, 16) 99%);
   color: #E5E9F0;
 }
@@ -67,7 +67,7 @@ button {
   display: flex;
   height: 60px;
   align-items: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 0.5px solid #a9a9a9;
 }
 .main-header div {
   display: flex;
@@ -81,41 +81,32 @@ button {
   line-height: 20px;
 }
 
-.one {
+.page_title {
   width: 300px;
   height: 60px;
   margin-left: 20px;
-  border-right: 1px solid #fff;
+  border-right: 0.5px solid #a9a9a9;
 }
 
-.second {
+.main_page, .about_me_page, .project_page {
   justify-content: center;
   width: 150px;
   height: 60px;
-  border-right: 1px solid #fff;
+  border-right: 0.5px solid #a9a9a9;
+  cursor: pointer;
 }
 
-.third {
-  justify-content: center;
-  width: 150px;
-  height: 60px;
-  border-right: 1px solid #fff;
+.select {
+  border-bottom: 4px solid #FEA55F;
 }
 
-.four {
-  justify-content: center;
-  width: 150px;
-  height: 60px;
-  border-right: 1px solid #fff;
-}
-
-.five {
+.conect_me {
   position: absolute;
   justify-content: center;
   width: 125px;
   height: 60px;
   right: 10px;
-  border-left: 1px solid #fff;
+  border-left: 0.5px solid #a9a9a9;
 }
 
 .front-pag {
@@ -138,18 +129,37 @@ button {
   color: #E5E9F0;
 }
 
-.p2 {
+.box-animation {
+  display: flex;
+  align-items: center;
+}
+.box-animation .p2, .box-animation .p3 {
+  margin: 10px;
   font-weight: 450;
   font-size: 32px;
   line-height: 39px;
-  color: #4D5BCE;
+  color: #E2DCC8;
+}
+.box-animation .p2 {
+  animation: seta 1s;
+  transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
+@keyframes seta {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
 .footer-pag {
   display: flex;
   align-items: center;
   height: 50px;
-  border-top: 1px solid #fff;
+  border-top: 0.5px solid #a9a9a9;
   font-weight: 450;
   font-size: 16px;
   line-height: 20px;
@@ -163,16 +173,23 @@ button {
   justify-content: center;
   width: 170px;
   height: 50px;
-  border-right: 1px solid #fff;
+  border-right: 0.5px solid #a9a9a9;
 }
 .footer-pag .find-icon {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-right: 1px solid #fff;
+  border-right: 0.5px solid #a9a9a9;
 }
 .footer-pag .find-icon a {
   color: #607B96;
+}
+.footer-pag .find-icon .fa-linkedin {
+  transition-duration: 900ms;
+}
+.footer-pag .find-icon .fa-linkedin:hover {
+  transform: scale(250%);
+  color: rgb(10, 102, 194);
 }
 .footer-pag .me-id {
   position: absolute;
@@ -180,14 +197,18 @@ button {
   width: 200px;
   height: 50px;
   right: 0px;
-  border-left: 1px solid #fff;
+  border-left: 0.5px solid #a9a9a9;
 }
 .footer-pag .me-id a {
   color: #607B96;
   text-decoration: none;
 }
-.footer-pag .me-id a::hover {
-  transform: scale(150%);
+.footer-pag .me-id .fa-github {
+  transition-duration: 900ms;
+}
+.footer-pag .me-id .fa-github:hover {
+  transform: scale(130%);
+  color: #fff;
 }
 .footer-pag .me-id p {
   margin-right: 5px;
