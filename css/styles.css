@@ -18,6 +18,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, header, hgroup, menu, nav {
   display: block;
@@ -55,8 +59,6 @@ button {
 .pag-1 {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100%;
   box-sizing: border-box;
   background: #0d1117;
   background: linear-gradient(11deg, rgb(25, 25, 25) 28%, rgb(7, 11, 16) 99%);
@@ -65,7 +67,10 @@ button {
 
 .main-header {
   display: flex;
+  position: fixed;
   height: 60px;
+  width: 100vw;
+  background-color: #0d1117;
   align-items: center;
   border-bottom: 0.5px solid #a9a9a9;
 }
@@ -111,36 +116,42 @@ button {
 
 .front-pag {
   display: flex;
-  height: calc(95vh - 50px);
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
-.p1 {
+.front-pag-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.front-pag-box .p1 {
   font-weight: 450;
   font-size: 18px;
   line-height: 22px;
 }
-
-.t1 {
+.front-pag-box .t1 {
   font-weight: 400;
   font-size: 62px;
   line-height: 76px;
   color: #E5E9F0;
 }
-
-.box-animation {
+.front-pag-box .box-animation {
   display: flex;
   align-items: center;
 }
-.box-animation .p2, .box-animation .p3 {
+.front-pag-box .box-animation .p2, .front-pag-box .box-animation .p3 {
   margin: 10px;
   font-weight: 450;
   font-size: 32px;
   line-height: 39px;
   color: #E2DCC8;
 }
-.box-animation .p2 {
+.front-pag-box .box-animation .p2 {
   animation: seta 1s;
   transition-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -155,6 +166,20 @@ button {
     transform: translateX(5px);
   }
 }
+.second-pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.second-pag .second-pag-box {
+  width: 569px;
+  height: 432px;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 150%;
+}
+
 .footer-pag {
   display: flex;
   align-items: center;

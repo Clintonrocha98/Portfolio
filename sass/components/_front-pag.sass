@@ -1,37 +1,43 @@
 .front-pag
-   display: flex
-   height: calc(95vh - 50px)
-   justify-content: center
-   align-items: center
-
-.p1
-    font-weight: 450
-    font-size: 18px
-    line-height: 22px
-.t1
-    font-weight: 400
-    font-size: 62px
-    line-height: 76px
-
-    color: #E5E9F0
-.box-animation
     display: flex
+    height: 100vh
+    justify-content: center
     align-items: center
 
-    .p2,.p3
-        margin: 10px
+.front-pag-box
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    flex-direction: column
+    height: 100vh
+    .p1
         font-weight: 450
-        font-size: 32px
-        line-height: 39px
-        color: #E2DCC8
-    
-    .p2
-        animation: seta 1s
-        transition-timing-function: ease-in-out
-        animation-iteration-count: infinite
-        animation-direction: alternate
+        font-size: 18px
+        line-height: 22px
+    .t1
+        font-weight: 400
+        font-size: 62px
+        line-height: 76px
 
+        color: #E5E9F0
+
+    .box-animation
+        display: flex
+        align-items: center
+
+        .p2,.p3
+            margin: 10px
+            font-weight: 450
+            font-size: 32px
+            line-height: 39px
+            color: #E2DCC8
         
+        .p2
+            animation: seta 1s
+            transition-timing-function: ease-in-out
+            animation-iteration-count: infinite
+            animation-direction: alternate
 
 @keyframes seta
     0%
@@ -40,6 +46,5 @@
 
     100%
         transform: translateX(5px)
-
 
 
