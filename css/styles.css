@@ -100,8 +100,7 @@ button {
   border-right: 0.5px solid #a9a9a9;
   cursor: pointer;
 }
-
-.select {
+.main_page:hover, .about_me_page:hover, .project_page:hover {
   border-bottom: 4px solid #FEA55F;
 }
 
